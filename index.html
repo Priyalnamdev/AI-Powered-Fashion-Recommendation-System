@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Recommendation System</title>
+</head>
+<style>
+   body{
+    background-image: url("https://watermark.lovepik.com/photo/50076/4714.jpg_wh1200.jpg");
+    background-size: cover;
+   }
+   #rec{
+    padding-top: 200px;
+    height: 400px;
+    width: 100%;
+    margin-left: 400px;
+    color: black;
+   }
+   button{
+    background-color: black;
+    color: white;
+    margin-left: 260px;
+   }
+   header{
+    align-items: center;
+}
+.navbar{
+    height: 40px;
+    position: fixed;
+    top: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 1000;
+    font-size: 18px;
+    }
+    a{
+    text-decoration: none;
+    }
+   
+    .navbar-menu {
+        list-style-type: none;
+        display: flex;
+        gap: 180px;
+      }
+      
+      /* .navbar-menu li {
+        margin-left: 210px;
+      }
+       */
+      .navbar-menu a {
+        color: rgb(0, 0, 0 );
+        text-decoration: none;
+        padding: 0.5em 1em;
+        transition: background-color 0.3s;
+      }
+      
+      .navbar-menu a:hover {
+        background-color: rgb(0, 0, 0 ,0.2);;
+        border-radius: 5px;
+        
+      }
+</style>
+<body >
+    <header> 
+        <nav class="navbar">
+           <img src="Mallcom_logo.jpg" height="50px" width="100px">
+             <ul class="navbar-menu">
+                 <li><a href="minor_project.html">Home</a></li>
+                 <li><a href="brands.html">Brands</a></li>
+                 <!-- <li><a href="m.html" target="_parent">Luxury</a></li> -->
+               <li><a href="luxery.html" target="_top">Luxury</a></li>
+                 <li><a href="#contact">Recommend</a></li>
+                 <li><a href="search.html">Search</a></li>
+             </ul>
+         </nav>
+     </header>
+    <div id="rec">
+    <h1>Welcome to the Fashion Recommendation System</h1>
+    <a href="http://localhost:8501/" target="_blank">
+        <button style="padding: 10px 20px; font-size: 16px;">Open Recommendation System</button>
+    </a>
+</div>
+</body>
+</html>

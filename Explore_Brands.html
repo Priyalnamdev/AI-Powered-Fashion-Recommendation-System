@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix Palladium - Brands</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .top-bar {
+            text-align: center;
+            background-color: black;
+            color: #f7d042;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+
+        .top-bar a {
+            color: #f7d042;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .logo-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        /* Large Image Styles */
+        .large-image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .large-image {
+        /* object-fit: cover;
+            width: 100%;
+            height: 650px;
+            border-radius: 15px; */
+            object-fit: cover;
+            width: 200%;
+            max-width: 1400px;
+            height: 650px;
+            border-radius: 15px;
+        }
+
+        .dine-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        main h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .restaurants {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .restaurant {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Consistent Image Size */
+        .restaurant img {
+            width: 100%;
+            height: 150px; /* Consistent height */
+            object-fit: cover; /* Ensures image covers the entire area */
+            border-radius: 5px;
+        }
+
+        .restaurant h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .restaurant p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .icons {
+            margin-top: 10px;
+        }
+
+        .icons button {
+            background-color: #fff;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mallcom</h1>
+    </header>
+    <div class="large-image-container">
+        <img src="https://i.pinimg.com/564x/a3/a2/bc/a3a2bc47ac4da120749a6f71e4893a08.jpg" alt="Large Image" class="large-image">
+    </div>
+
+    <!-- Dine Section -->
+    <main>
+        <section class="dine-section">
+            <h1>Dine</h1>
+            <div class="restaurants">
+                <!-- Restaurant Block 1 -->
+                <div class="restaurant">
+                    <img src="https://i.pinimg.com/474x/5e/38/03/5e3803becc34c6202a3eb527e25b565d.jpg" alt="Restaurant 1">
+                    <h3>Prada</h3>
+                    <p>First Floor</p>
+                    <div class="icons">
+                        <button>📞</button>
+                        <button>📍</button>
+                    </div>
+                </div>
+                <!-- Restaurant Block 2 -->
+                <div class="restaurant">
+                    <img src="https://i.pinimg.com/474x/dd/ca/48/ddca48b403f644a8d4a61cad7f77d85f.jpg" alt="Restaurant 2">
+                    <h3>Versace</h3>
+                    <p>Second Floor</p>
+                    <div class="icons">
+                        <button>📞</button>
+                        <button>📍</button>
+                    </div>
+                </div>
+                <!-- Restaurant Block 3 -->
+                <div class="restaurant">
+                    <img src="https://i.pinimg.com/474x/a2/4a/fb/a24afbd123857830841dba6f136d3e59.jpg" alt="Restaurant 3">
+                    <h3>Dior</h3>
+                    <p>Third Floor</p>
+                    <div class="icons">
+                        <button>📞</button>
+                        <button>📍</button>
+                    </div>
+                </div>
+                <!-- Restaurant Block 4 -->
+                <div class="restaurant">
+                    <img src="https://i.pinimg.com/474x/fc/b3/27/fcb327e3339e76314522d89e8cff8784.jpg" alt="Restaurant 4">
+                    <h3>Chanel</h3>
+                    <p>Fourth Floor</p>
+                    <div class="icons">
+                        <button>📞</button>
+                        <button>📍</button>
+                    </div>
+                </div>
+                <!-- Restaurant Block 5 -->
+                <div class="restaurant">
+                    <img src="https://i.pinimg.com/474x/00/c3/58/00c3582ec90bcf528a10079db73bc990.jpg" alt="Restaurant 5">
+                    <h3>Fastrack</h3>
+                    <p>Fifth Floor</p>
+                    <div class="icons">
+                        <button>📞</button>
+                        <button>📍</button>
+                    </div>
+                </div>
+                <!-- Restaurant Block 6 -->
+                <div class="restaurant">
+                    <img src="https://i.pinimg.com/474x/59/b6/cf/59b6cf85b603173823403a8869a433f4.jpg" alt="Restaurant 6">
+                    <h3>Zara</h3>
+                    <p>Sixth Floor</p>
+                    <div class="icons">
+                        <button>📞</button>
+                        <button>📍</button>
+                    </div>
+                </div>
+                <!-- Restaurant Block 7 -->
+                <div class="restaurant">
+                    <img src="https://i.pinimg.com/474x/65/35/89/6535894fd58c4f8f81dedd40a56894ba.jpg" alt="Restaurant 7">
+                    <h3>Gucci</h3>
+                    <p>Seventh Floor</p>
+                    <div class="icons">
+                        <button>📞</button>
+                        <button>📍</button>
+                    </div>
+                </div>
+                <!-- Restaurant Block 8 -->
+                <div class="restaurant">
+                    <img src="https://i.pinimg.com/474x/bd/7b/d3/bd7bd3ea364d0f59466db6209dd1c506.jpg" alt="Restaurant 8">
+                    <h3>Titan</h3>
+                    <p>Eighth Floor</p>
+                    <div class="icons">
+                        <button>📞</button>
+                        <button>📍</button>
+                    </div>
+                </div>
+                <!-- Restaurant Block 9 -->
+                <div class="restaurant">
+                  <img src="data:image/png;base64,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" alt="Restaurant 9">
+                    <h3>Lakme</h3>
+                    <p>Ninth Floor</p>
+                    <div class="icons">
+                        <button>📞</button>
+                        <button>📍</button>
+                    </div>
+                </div>
+              
+    </main>
+</body>
+</html>

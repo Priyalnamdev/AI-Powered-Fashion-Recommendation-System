@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            /* margin: 0;
+            padding: 0; */
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+            font-size: 18px;
+        }
+
+        body {
+            margin: 4vh;
+        }
+        header{
+    align-items: center;
+}
+.navbar{
+    height: 60px;
+    position: fixed;
+    top: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 1000;
+    font-size: 18px;
+    }
+    a{
+    text-decoration: none;
+    }
+   
+    .navbar-menu {
+        list-style-type: none;
+        display: flex;
+        gap: 180px;
+      }
+      
+      /* .navbar-menu li {
+        margin-left: 210px;
+      }
+       */
+      .navbar-menu a {
+        color: rgb(0, 0, 0 );
+        text-decoration: none;
+        padding: 0.5em 1em;
+        transition: background-color 0.3s;
+      }
+      
+      .navbar-menu a:hover {
+        background-color: rgb(0, 0, 0 ,0.2);;
+        border-radius: 5px;
+        
+      }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .sidebar {
+            width: 25%;
+            border: 1px solid #eee;
+            border-radius: 3px;
+            padding: 25px;
+            height: 92vh;
+            box-shadow: 0px 0px 3px gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .fa-circle {
+            color: orangered;
+        }
+
+        .searchBar {
+            width: 100%;
+            background-color: #eee;
+            border-radius: 3px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            background: none;
+        }
+
+        .glass:hover {
+            color: orangered;
+            cursor: pointer;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fa-brands {
+            font-size: 25px;
+            margin: 0 10px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .fa-brands:hover {
+            color: orangered;
+        }
+
+        .data {
+            width: 73%;
+            border-radius: 3px;
+            height: 92vh;
+            overflow-y: auto;
+        }
+
+        .top {
+            height: 60px;
+            border-radius: 3px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 40px;
+        }
+
+        .header {
+            height: 200px;
+            border-radius: 3px;
+            background-color: #333;
+            margin: 3vh 0px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header p {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+        }
+
+        #root {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .box {
+            margin: 1px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .img-box {
+            width: 100%;
+            height: 176px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .images {
+            max-height: 90%;
+            max-width: 90%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .bottom {
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 110px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: orangered;
+        }
+
+        button {
+            width: 100%;
+            position: relative;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            padding: 7px 25px;
+            cursor: pointer;
+            color: white;
+        }
+
+        button:hover {
+            background-color: orangered;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header> 
+        <nav class="navbar">
+           <img src="Mallcom_logo.jpg" height="50px" width="100px">
+             <ul class="navbar-menu">
+                 <li><a href="minor_project.html">Home</a></li>
+                 <li><a href="brands.html">Brands</a></li>
+                 <!-- <li><a href="m.html" target="_parent">Luxury</a></li> -->
+               <li><a href="luxery.html" target="_top">Luxury</a></li>
+                 <li><a href="index.html">Recommend</a></li>
+                 <li><a href="search.html">Search</a></li>
+             </ul>
+         </nav>
+     </header>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidehead">
+                <div class="dots">
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle" style="color: #333;"></i>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+                <hr style="margin: 15px 0; border: 1px solid #eee">
+            </div>
+            <div class="sidebody" style="height: 69vh;">
+                <div class="searchBar">
+                    <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+                    <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+                </div>
+            </div>
+            <div class="sidefoot">
+                <hr style="margin: 15px 0; border: 1px solid #eee">
+                <div class="social-icons">
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-square-github"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="data">
+            <div class="top">
+                <p>Discount</p>
+
+            </div>
+            <div class="header">
+                <p>AD</p>
+            </div>
+            <div class="body">
+                <div id="root"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const product = [
+            {
+                id: 0,
+                image: 'http://assets.myntassets.com/assets/images/17048614/2022/2/4/b0eb9426-adf2-4802-a6b3-5dbacbc5f2511643971561167KhushalKWomenBlackEthnicMotifsAngrakhaBeadsandStonesKurtawit7.jpg',
+                title: 'Ethnic Motifs Printed Kurta with Palazzos & With Dupatta',
+                Brand: 'Khushal K',
+            },
+            {
+                id: 1,
+                image: 'http://assets.myntassets.com/assets/images/16524740/2021/12/29/17ab2ac8-2e60-422d-9d20-2527415932361640754214931-STRAPPY-SET-IN-ORANGE-WITH-ORGANZA-DUPATTA-5961640754214349-2.jpg',
+                title: 'Kurta with Palazzos & Floral Print Dupatta',
+                Brand: 'InWeave',
+            },
+            {
+                id: 2,
+                image: 'http://assets.myntassets.com/assets/images/16331376/2021/12/2/b8c4f90f-683c-48d2-b8ac-19891a87c0651638428628378KurtaSets1.jpg',
+                title: ' Ethnic Motifs Embroidered Thread Work Kurta with Trousers & With Dupatta',
+                Brand: 'Anubhutee',
+            },
+            {
+                id: 3,
+                image: 'http://assets.myntassets.com/assets/images/14709966/2021/7/10/d2407657-1f04-4d13-9f52-9e134050489b1625905793495-Nayo-Women-Red-Ethnic-Motifs-Printed-Empire-Pure-Cotton-Kurt-1.jpg',
+                title: 'Floral Printed Kurta With Trouser & Dupatta',
+                Brand:' Nayo',
+            },
+            {
+                id: 4,
+                image: 'http://assets.myntassets.com/assets/images/11056154/2019/12/5/30b0017d-7e72-4d40-9633-ef78d01719741575541717470-AHIKA-Women-Black--Green-Printed-Straight-Kurta-990157554171-1.jpg',
+                title: ' Printed Straight Kurta',
+                Brand: 'AHIKA',
+            },
+            {
+                id: 5,
+                image: 'http://assets.myntassets.com/assets/images/18704418/2022/6/11/507490f7-c8f9-492c-b3f8-c7e977d1af701654922515416SochWomenRedThreadWorkGeorgetteAnarkaliKurta1.jpg',
+                title: 'Thread Work Georgette Anarkali Kurta',
+                Brand: 'Soch',
+            },
+            {
+                id: 6,
+                image: 'http://assets.myntassets.com/assets/images/14951330/2022/2/16/e6b90907-a613-45e1-9b2e-988caaba36581645010770505-Ahalyaa-Women-Beige-Floral-Printed-Regular-Gotta-Patti-Kurta-1.jpg',
+                title: 'Floral Printed Regular Gotta Patti Kurta with Palazzos & With Dupatta',
+                Brand: 'Ahalyaa ',
+            },
+            {
+                id: 7,
+                image: 'http://assets.myntassets.com/assets/images/13791594/2022/2/14/5ea707f4-8491-4d1c-b520-86a1cff4c86e1644841891629-Anouk-Women-Yellow--White-Printed-Kurta-with-Palazzos-706164-1.jpg',
+                title: 'Printed Kurta with Palazzos',
+                Brand: 'Anouk',
+            },
+            {
+                id: 8,
+                image: 'http://assets.myntassets.com/assets/images/10356859/2019/8/8/b783aef9-c902-462e-af73-de159bfd011c1565256752191-Libas-Women-Kurta-Sets-2081565256750830-1.jpg ',
+                title: 'Khushal K Women Green & Pink Printed Pure Cotton Kurta with Palazzos & Dupatta',
+                Brand: 'Khushal K ',
+            },
+            {
+                id: 9,
+                image: 'http://assets.myntassets.com/assets/images/9867983/2019/5/31/43d65352-9853-498e-95a4-be514df0be901559294212152-Vishudh--Straight-Kurta-With-Crop-Palazzo-7041559294209627-1.jpg',
+                title: 'AHIKA Women Teal Ethnic Motifs Yoke Design Kurta with Trousers & With Dupatta',
+                Brand: 'AHIKA',
+            },
+            {
+                id: 10,
+                image: 'http://assets.myntassets.com/assets/images/17662850/2022/3/29/46c9a5ae-6449-4eac-93a7-584be425168b1648523987117DupattaBazaarWomenGoldDupatta1.jpg',
+                title: 'Embroidered Dupatta with Gotta Patti',
+                Brand: 'Dupatta Bazaar',
+            },
+            {
+                id: 11,
+                image: 'http://assets.myntassets.com/assets/images/17532960/2022/3/15/b518fea5-82d5-45b0-a32d-fdc84b06d0c51647316390998Dupatta1.jpg',
+                title: ' Women Gold-Toned Woven Design Dupatta',
+                Brand: 'RANGMANCH BY PANTALOONS',
+            },
+            {
+                id: 12,
+                image: 'http://assets.myntassets.com/assets/images/16382482/2022/3/18/e6181f65-9897-41b4-8f70-8558917209311647597155169-House-of-Pataudi-Women-Dupatta-4471647597154920-1.jpg',
+                title: 'Motifs Embroidered Jashn Dupatta with Sequinned',
+                Brand: 'House of Pataudi',
+            },
+            {
+                id: 13,
+                image: 'http://assets.myntassets.com/assets/images/16911760/2022/5/18/0c27a9cc-59b8-4243-8c6e-31c36bdf78d61652847171651-Taavi-Women-Dupatta-151652847171376-1.jpg',
+                title: 'Pure Cotton Block Print Legacy Dupatta',
+                Brand: 'Taavi',
+            },
+            {
+                id: 14,
+                image: 'http://assets.myntassets.com/assets/images/18213792/2022/5/26/c49c5825-f945-4cc9-a5c7-7115a03fd2371653558259322ChikankariSequinEmbroideredDupatta1.jpg',
+                title: 'Chikankari Embroidered Dupatta',
+                Brand: 'Saadgi',
+            },
+            {
+                id: 15,
+                image: 'http://assets.myntassets.com/assets/images/16619086/2021/12/27/94fc9435-dfac-4cd2-a56a-5068b124c6141640596915245BeigePureWoolEmbroideredShawlWoolmarkCertified2.jpg',
+                title: ' Brown Embroidered Woolen Shawl',
+                Brand: 'Pashmoda',
+            },
+            {
+                id: 16,
+                image: 'http://assets.myntassets.com/assets/images/17933338/2022/5/16/5c08f408-a41f-445a-83a0-e1713d3df5c81652699452977SatraniGreenYellowSemi-StitchedLehengaUnstitchedBlouseWithDu1.jpg',
+                title: 'Semi-Stitched Lehenga & Unstitched Blouse With Dupatta',
+                Brand: 'Satrani',
+            },
+            {
+                id: 17,
+                image: 'http://assets.myntassets.com/assets/images/17933340/2022/5/7/e50e8b16-fb81-4eb2-9cc6-697c3bede7a31651904858489-Satrani-Teal-Green--Black-Printed-Semi-Stitched-Lehenga--Uns-1.jpg',
+                title: 'Semi-Stitched Lehenga & Unstitched Blouse With Dupatta',
+                Brand: 'Satrani',
+            },
+            {
+                id: 18,
+                image: 'http://assets.myntassets.com/assets/images/18095222/2022/4/29/dda1e467-3f23-4626-8e30-add2499f133f1651241139231WarthyEntWomenGreenLehengaCholi1.jpg',
+                title: ' Orange Semi-Stitched Lehenga & Unstitched Blouse With Dupatta',
+                Brand: 'Warthy Ent',
+            },
+            {
+                id: 19,
+                image: 'http://assets.myntassets.com/assets/images/18095230/2022/4/29/66f61cf1-6d87-4399-93ac-9d99609e5d681651242050451WarthyEntWomenGreenLehengaCholi1.jpg',
+                title: 'Lehenga & Unstitched Blouse With Dupatta',
+                Brand: 'Warthy Ent',
+            },
+            {
+                id: 20,
+                image: 'http://assets.myntassets.com/assets/images/15177320/2021/9/14/f365c0fe-57f7-4ebe-9f8f-bbf8120e36cf1631620025144-House-of-Pataudi-Women-Pink-Cotton-Ethnic-Motifs-Printed-A-L-1.jpg',
+                title: ' Cotton Floral Printed Rozana Fit & flare Kurta',
+                Brand: 'Ode by House of Pataudi',
+            },
+            {
+                id: 21,
+                image: 'http://assets.myntassets.com/assets/images/19324666/2022/7/30/aa2f616b-dce3-401c-9391-1abf7a417e431659197962367Kurtas1.jpg',
+                title: 'Red Ethnic Motifs Thread Work Kurta',
+                Brand: 'FASHOR',
+            },
+            {
+                id: 22,
+                image: 'http://assets.myntassets.com/assets/images/14848486/2021/9/1/849c44d7-0274-49fa-bb15-c5d786b74e351630497951879-Biba-Women-Yellow-Printed-Regular-Gotta-Patti-Kurta-with-Tro-1.jpg',
+                title: 'Regular Kurta with Palazzos & With Dupatta',
+                Brand: 'Biba',
+            },
+            {
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/18929148/2022/7/1/7a6c7397-7bc3-4f19-8ab8-ba126444b0611656672761489VishudhWomenTurquoiseBluePleatedKurtiwithDhotiPantsWithDupat1.jpg',
+                title: ' Pleated Kurti with Trouser & With Dupatta',
+                Brand: 'Vishudh',
+            },
+            {
+                id: 24,
+                image: 'http://assets.myntassets.com/assets/images/10317841/2019/8/8/dc7bb0aa-34f6-435a-9649-f7381927ba251565268692798-Jaipur-Kurti-Women-Kurta-Sets-6041565268691298-1.jpg',
+                title: 'Yoke Design Kurta with Palazzos & Dupatta',
+                Brand: 'Jaipur Kurti',
+            },
+            {
+                id: 25,
+                image: 'http://assets.myntassets.com/assets/images/productimage/2021/5/19/7adc158e-82b1-4774-bab3-b1268147fd0c1621404333875-1.jpg',
+                title: ' Ethnic Motifs Printed Indigo Kurta',
+                Brand: 'Nayo',
+            },
+            {
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/9252969/2019/4/17/cbd76360-48e7-4dec-a8a1-b1865855684d1555483115190-anayna-Women-Pink--Teal-Printed-Straight-Kurta-4141555483113-1.jpg',
+                title: 'Pink Printed Straight Kurta',
+                Brand: 'anayna',
+            },
+            {
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/15090310/2022/1/27/38c59e48-22df-4b64-8a37-c93f96b535911643298708933FASHIONDEPTHWomenGreenYellowFloralYokeDesignThreadWorkStraig1.jpg',
+                title: ' Floral Yoke Design Thread Work Straight Kurta',
+                Brand: 'FASHION DEPTH',
+            },
+            {
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/10513948/2019/9/4/e515a887-a59f-48bf-a53b-0181c4381a431567580918498-Anubhutee-Women-Kurtas-991567580917526-1.jpg',
+                title: ' Yellow & Brown Screen Printed Straight Kurta',
+                Brand: 'Anubhutee',
+            },{
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/18859188/2022/6/24/924fb098-6dd0-473c-a5c5-5bade59fa5341656073536252MelangebyLifestyleBeigePrintedCottonKurtas1.jpg',
+                title: 'Women Beige Keyhole Neck Flared Sleeves Kurta',
+                Brand: 'Melange by Lifestyle',
+            },{
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/11530828/2020/2/25/9effe877-9389-47c1-92e2-1b11b8ac7ed31582622121073-anayna-Women-Beige--Pink-Printed-Straight-Kurta-773158262211-1.jpg',
+                title: ' Pink Screen Print Straight Kurta',
+                Brand: 'anayna',
+            },{
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/19129450/2022/7/16/55fdf6cb-91c1-4b54-b51f-eb6ac22e9c2f1657959654991MeeranshiWomenNavyBlueEthnicMotifsPanelledGottaPattiKurtiwit1.jpg',
+                title: ' Navy Blue Ethnic Motifs Panelled Kurta with Trousers & With Dupatta',
+                Brand: 'Meeranshi',
+            },{
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/15639862/2021/9/27/99ed8ec1-c079-481d-bbf7-846b2c6747621632735846100VishudhWomenYellowEthnicMotifsPrintedKeyholeNeckAnarkaliKurt6.jpg',
+                title: 'White Ethnic Motifs Printed A-Line Kurta with Jacket',
+                Brand: 'Vishudh',
+            },{
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/16505402/2021/12/13/6fc05a51-acad-45c6-843f-bafc27b7529f1639397638933KALINIWomenPinkGeometricDyedFloralAnarkaliKurta1.jpg',
+                title: 'Bandhani Printed Anarkali Kurta',
+                Brand: 'KALINI',
+            },
+            {
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/16931152/2022/1/25/5ab2e868-781c-470a-8364-ddb95cf44def1643096196160WWomenWhiteGeometricKeyholeNeckThreadWorkKurta1.jpg',
+                title: 'Geometric Printed Thread Work Kurta',
+                Brand: 'W',
+            },
+            {
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/15427372/2022/2/21/9cd688ab-b11d-4721-9e7f-6effc3dbb5501645444433919-Anouk-Women-Kurta-Sets-281645444433262-1.jpg',
+                title: 'Paisley Printed Cotton Kurta',
+                Brand: 'Anouk',
+            },
+            {
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/17606426/2022/3/22/b73410ec-85de-45c5-b523-9898485783ec1647937774242VarangaWomenPinkEthnicMotifsYokeDesignPanelledKurtiwithChuri1.jpg',
+                title: 'Ethnic Motifs A-line Kurta with Trousers &  Dupatta',
+                Brand: 'Varanga',
+            },
+            {
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/productimage/2021/2/11/1568ab72-37c1-4624-b9e2-8b1db40c0ed71613038885164-1.jpg',
+                title: 'Embroidered Kurti with Sharara & Dupatta',
+                Brand: 'Ishin',
+            },
+            {
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/19043664/2022/7/11/bb398c1f-ca3d-45dd-98ef-7ad7519a3a1f1657519767473CharuWomenPeach-ColouredFlaredSleevesThreadWorkKurta1.jpg',
+                title: 'Yoke Design Kurt',
+                Brand: 'Charu',
+            },
+            {
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/10808284/2019/10/30/c35d059d-a357-4863-bcb1-eacd8c988fb01572422803188-AHIKA-Women-Kurtas-8841572422802083-1.jpg',
+                title: 'Straight Cotton Kurta With Keyhole Neck',
+                Brand: 'AHIKA ',
+            },
+            {
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/15241816/2021/8/24/d57adb8b-e792-477a-8801-6ea570cd88ef1629800170287VarangaWomenYellowFloralPrintedKeyholeNeckThreadWorkKurta1.jpg',
+                title: 'Floral Screen Printed Gotta Patti Straight Kurta',
+                Brand: 'Varanga',
+            },
+            {
+                id: 23,
+                image: 'http://assets.myntassets.com/assets/images/14399798/2022/4/20/4a37718e-8942-479c-a7ea-0b074d53ee4b1650456566424AnoukWomenPeach-ColouredYokeDesignMirror-WorkKurtawithTrouse1.jpg',
+                title: ' Yoke Design Mirror-Work Kurta with Trousers & With Dupatta',
+                Brand: 'Anouk',
+            },
+        ];
+
+        const categories = [...new Set(product.map((item) => { return item }))]
+
+        document.getElementById('searchBar').addEventListener('keyup', (e) => {
+            const searchData = e.target.value.toLowerCase();
+            const filteredData = categories.filter((item) => {
+                return (
+                    item.title.toLowerCase().includes(searchData)
+                )
+            })
+            displayItem(filteredData)
+        });
+
+        const displayItem = (items) => {
+            document.getElementById('root').innerHTML = items.map((item) => {
+                var { image, title, Brand } = item;
+                return (
+                    `<div class='box'>
+                        <div class='img-box'>
+                            <img class='images' src=${image}></img>
+                        </div> 
+                        <div class='bottom'>
+                            <p>${title}</p>
+                            <h2>${Brand}</h2>
+                        <button>Explore IT</button>
+                        </div>
+                    </div>`
+                )
+            }).join('')
+        };
+        displayItem(categories);
+
+    </script>
+</body>
+
+</html>

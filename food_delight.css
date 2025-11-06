@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.top-bar {
+    text-align: center;
+    background-color: black;
+    color: #f7d042;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.top-bar a {
+    color: #f7d042;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Large Image Styles */
+.large-image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.large-image {
+    object-fit: cover;
+    width: 100%;
+    height: 650px;
+    border-radius: 15px;
+}
+
+.dine-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+main h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.restaurants {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    justify-items: center;
+}
+
+.restaurant {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+}
+
+.restaurant img {
+    width: 100%;
+    border-radius: 5px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.restaurant h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.restaurant p {
+    color: #666;
+    font-size: 14px;
+}
+
+.icons {
+    margin-top: 10px;
+}
+
+.icons button {
+    background-color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+}

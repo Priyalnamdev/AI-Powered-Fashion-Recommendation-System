@@ -1,0 +1,408 @@
+/* *{
+     margin: 0;
+    padding: 0; 
+      box-sizing: border-box;  
+   }  */
+   .first-page{
+    background-image: url(https://mpbreakingnews.in/wp-content/uploads/2023/01/mpbreaking52462981.jpg);
+    background-size: cover;
+    opacity: 2px;
+    margin: 0%;
+    height: 725px;
+    width: 100%;
+    padding: 0%;
+    top: 0%;
+    }
+header{
+    align-items: center;
+}
+.navbar{
+    height: 40px;
+    position: fixed;
+    top: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 1000;
+    font-size: 18px;
+    }
+    a{
+    text-decoration: none;
+    }
+   
+    .navbar-menu {
+        list-style-type: none;
+        display: flex;
+        gap: 180px;
+      }
+      
+      /* .navbar-menu li {
+        margin-left: 210px;
+      } */
+      
+      .navbar-menu a {
+        color: rgb(0, 0, 0 );
+        text-decoration: none;
+        padding: 0.5em 1em;
+        transition: background-color 0.3s;
+      }
+      
+      .navbar-menu a:hover {
+        background-color: rgb(0, 0, 0 ,0.2);;
+        border-radius: 5px;
+        
+      }
+
+    #two{
+        /* background-color:rgba(0, 0, 0, 0.5); */
+        height: 690px;
+        width: 100%;
+        /* border: 2px solid rgba(0, 0, 0, 0.5) ; */
+         /* border-radius: 20px;  */
+         /* margin-top: 20%;  */
+         /* margin-left:500px ;  */
+         color:white;
+        text-align: center;
+        padding: 1rem;
+        
+         }
+         .out h1{
+            margin-top: 250px;
+         }
+         .three{
+            color:rgb(255, 255, 255,0.7);
+            font-size: 30px;
+            font-family: arial;
+         }
+         .second-page{
+            height:700px;
+                width: 100%;
+                padding-top: 0%;
+                /* background-color:rgb(128, 128, 128,0.2) ; */
+                background-color: rgb(128, 128, 128,0.07); 
+           }
+           .upper-space{
+            height: 200px;
+            width: 100%;
+            background-color: transparent;
+            
+           } 
+           .heading{
+            text-align: center; 
+            color: black;
+            padding-top: 40px;
+            font-size:23px ;
+           }
+           .container{
+            height: 300px;
+            width: 100%;
+            display: flex;
+            
+           }
+          
+            #img-1{
+                 height: 400px;
+                width: 25%;
+                margin-left: 25px;
+                background-image: url(https://www.westcoastexoticcars.com/imagetag/230/2/l/Used-2016-BMW-M4-1610066871.jpg);
+                background-size: cover;
+                border-radius: 20px;
+               
+            }
+           
+            #img-2{
+                height: 400px;
+                width: 25%;
+                margin-left: 100px;
+                background-image: url(https://static1.bigstockphoto.com/3/9/1/large1500/193264459.jpg);
+                background-size: cover;
+                border-radius: 20px;
+            }
+            #img-3{
+                height: 400px;
+                width: 25%;
+                margin-left: 100px;
+                background-image: url(https://www.shkp.com/sites/assets/files/2019-01/cca_500_0.jpg);
+                background-size: cover;
+                border-radius: 20px;
+            }
+            .in{
+                margin-left: 350px;
+                margin-top:15px;
+                height: 70px;
+                width: 100%;
+                text-align: center;
+                color: black;
+                font-size:20px ;
+            } 
+            .b{
+                margin-top: 40px;
+                padding-top: 8px;
+                height: 45px;
+                width: 100px;
+                border: 4px solid white;
+                font-size: 20px;
+                margin-left: 130%;
+                background-color: black;
+                text-align: center;
+                
+               }
+               .b1{
+                margin-top: 40px;
+                padding-top: 8px;
+                height: 45px;
+                width: 100px;
+                border: 4px solid white;
+                font-size: 20px;
+                margin-left: 170%;
+                background-color: black;
+                text-align: center;
+                
+               }
+            .shade{
+                height: 400px;
+                width: 100%;
+                
+                border-radius: 20px;
+            }
+            /* jhanvi */
+            /* .third-page{
+                height:700px;
+                width: 100%;
+                padding-top: 0%;
+                background-color: skyblue ;
+            } */
+            .third-page{
+                height:700px;
+                width: 100%;
+                padding-top: 0%;
+                background-image: url(https://i.pinimg.com/564x/6d/98/ac/6d98acac2b7b72caaf6c55790d2d21b7.jpg);
+                background-size: cover;
+                opacity: 2px;
+                margin: 0%;
+              
+            }
+            .upper-space_1{
+                height: 200px;
+                width: 100%;
+                background-color: transparent;
+                
+               } 
+               .heading_1{
+                text-align: center; 
+                color: black;
+                padding-top: 40px;
+                font-size:23px ;
+               }
+               .container_1{
+                height: 300px;
+                width: 100%;
+                display: flex;
+                
+               }
+               #img-4{
+            
+              height: 400px;
+               width: 25%;
+               margin-left: 250px;
+               background-image: url(https://i.pinimg.com/474x/d1/84/8a/d1848acd60f0a0801d191ca3b1a0c66d.jpg);
+               background-size: cover;
+               border-radius: 20px;
+              
+           }
+          
+           #img-5{
+               height: 400px;
+               width: 25%;
+               margin-left: 350px;
+               background-image: url(https://i.pinimg.com/enabled_lo/474x/4c/1d/50/4c1d50c7503f3a47c2e175700bf0422e.jpg);
+               background-size: cover;
+               border-radius: 20px;
+           }
+        
+
+             /* lakshita */
+            .fourth-page{
+                height:700px;
+                width: 100%;
+                padding-top: 0%;
+                /* background-color: rgb(128, 128, 128,0.2); */
+                background-color: rgb(128, 128, 128,0.07); 
+                
+            }
+            .upper-space_2{
+                height: 200px;
+                width: 100%;
+                background-color: transparent;
+                
+               } 
+               .heading_2{
+                text-align: center; 
+                color: black;
+                padding-top: 40px;
+                font-size:23px ;
+               }
+               .container_3{
+                height: 300px;
+                width: 100%;
+                display: flex;
+                
+               }
+               #img-6{
+            
+              height: 400px;
+               width: 25%;
+               margin-left: 80px;
+               background-image: url(https://i.pinimg.com/enabled_lo/474x/52/39/47/523947bf12d862dc41afd11bae277bfb.jpg);
+               background-size: cover;
+               border-radius: 20px;
+              
+           }
+          
+           #img-7{
+               height: 400px;
+               width: 25%;
+               margin-left: 150px;
+               background-image: url(https://i.pinimg.com/enabled_lo/474x/ea/79/01/ea7901f5fcd2c1b1bbbc5470a189ce7e.jpg);
+               background-size: cover;
+               border-radius: 20px;
+           }
+           #img-8{
+            height: 400px;
+            width: 25%;
+            margin-left: 150px;
+            background-image: url(https://i.pinimg.com/736x/f1/fa/a9/f1faa9bd246b7495c0f0ab3c9bd283e9.jpg);
+            background-size: cover;
+            border-radius: 20px;
+        }
+         
+           /* saloni */
+            
+            .fifth-page{
+                height:800px;
+                width: 100%;
+                padding-top: 0%;
+                background-image: url(data:image/jpeg;base64,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);
+                background-size: cover;
+            }
+           .upp{
+            padding-top: 30px;
+            text-align: center;
+            color: black;
+            }
+           .inn{
+            font-size: 25px;
+            color: black;
+           }
+           .vertical-line {
+            width: 7px;
+            height: 600px;
+            background-color: black;
+            margin: 0 auto;
+            margin-left: 5%;
+            
+            }
+            .fr1{
+                
+                height: 250px;
+                    width: 25%;
+                    margin-right: 300px;
+                    background-image: url(https://s3-eu-west-1.amazonaws.com/files.olearyssportsbar.com/gamezone_4.jpg.1200x630_q85.jpg);
+                    background-size: cover;
+                    border-radius: 20px;
+            }
+            .fr2{
+                margin-top: 300px;
+                height: 250px;
+                    width: 25%;
+                 margin-left: 300px;
+                    background-image: url(https://beyondenoughag8.s3.ap-south-1.amazonaws.com/dynamic/TZ-AMB-GUR-Album-2.pngbeimg0lsnbuclu.png);
+                    background-size: cover;
+                    border-radius: 20px;
+            }
+             
+    .cop{
+        height:800px ;
+        width: 100%;
+        display: flex;
+    }
+    .sixth-page{
+        height:330px;
+        width: 100%;
+        padding-top: 0%;
+        background-color:mediumpurple ;
+    }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            background-color: #f5f5f5;
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 20px;
+        }
+        .footer-section h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        .footer-section ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .social-icons a {
+            width: 30px;
+            height: 30px;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        .newsletter-form {
+            display: flex;
+            margin-top: 10px;
+        }
+        .newsletter-form input[type="email"] {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .newsletter-form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        .copyright {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
